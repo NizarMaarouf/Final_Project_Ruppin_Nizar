@@ -21,7 +21,7 @@ simplefilter(action='ignore', category=FutureWarning)
 # Step2: Load dataset
 Arabic_word = pd.read_csv(r'C:\Users\nizar.maarouf\Desktop\NIZAR\Arabic_Words.csv')
 
-# input rong value 
+# input wrong value 
 wrong_input = pd.read_csv(r'C:\Users\nizar.maarouf\Desktop\NIZAR\wrong_input.csv')
 wrong_input = wrong_input.values
 
@@ -42,7 +42,7 @@ predict_vector = model.predict(x_ts)
 # PREDICT THE REAL VALUE
 predictions = model.predict(real_input)
 
-# PREDET THE INPUT WRONG VALE
+# PREDICT THE INPUT WRONG VALE
 prediction_R = model.predict(wrong_input)
 
 # if (predictions == 0):
