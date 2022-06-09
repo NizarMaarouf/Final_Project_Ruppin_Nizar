@@ -1,13 +1,24 @@
 {
     "cSpell.words": [
         "Gtaa",
+        "HAMZET",
+        "initialdir",
         "joblib",
         "maarouf",
         "matplotlib",
         "mlxtend",
+        "Niar",
+        "padx",
+        "pady",
         "pyplot",
+        "qraphviz",
+        "relheight",
+        "relwidth",
+        "relx",
         "scipy",
         "sklearn",
+        "startfile",
         "Wasl"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }

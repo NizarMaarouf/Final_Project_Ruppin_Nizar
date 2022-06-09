@@ -10,8 +10,6 @@ App.title('Does the word start with the HAMZET "Wasl or Gtaa"?')
 App.geometry('500x450')
 
 
-App.pack()
-
 
 
 
