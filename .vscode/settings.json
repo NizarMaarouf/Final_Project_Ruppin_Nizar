@@ -20,5 +20,6 @@
         "startfile",
         "Wasl"
     ],
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "notebook.output.textLineLimit": 500
 }
