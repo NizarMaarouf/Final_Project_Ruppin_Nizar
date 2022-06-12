@@ -19,18 +19,17 @@ from warnings import simplefilter
 simplefilter(action='ignore', category=FutureWarning)
 
 # Step2: Load dataset
-Arabic_word = pd.read_csv(r'C:\Users\nizar.maarouf\Desktop\NIZAR\Arabic_Words.csv')
+Arabic_word = pd.read_csv(r'C:\Users\nizar.maarouf\Desktop\Final_Progect_Ruppin\CSV_Files\Data.csv')
 
 # input wrong value 
-wrong_input = pd.read_csv(r'C:\Users\nizar.maarouf\Desktop\NIZAR\wrong_input.csv')
-wrong_input = wrong_input.values
+# wrong_input = pd.read_csv(r'C:\Users\nizar.maarouf\Desktop\Final_Progect_Ruppin\CSV_Files\wrong_input.csv')
+# wrong_input = wrong_input.values
 
 # Step 3: Split the data in training and testing subsets
-
 real_input = Arabic_word.drop(columns = ['Outcome' , 'Word'])
-real_input = real_input.values
+# real_input = real_input.values
 y = Arabic_word['Outcome']
-x_tr, x_ts, y_tr, y_ts = train_test_split(real_input,y,test_size=0.1994 , random_state = 301 )
+x_tr, x_ts, y_tr, y_ts = train_test_split(real_input,y,test_size=0.35 )
 
 # Step 4: Classifier training using Support Vector Machine
 model = svm.SVC(gamma="auto")
@@ -40,28 +39,29 @@ model.fit(x_tr,y_tr)
 # Step 5: make predict on test data and see result
 predict_vector = model.predict(x_ts)
 # PREDICT THE REAL VALUE
-predictions = model.predict(real_input)
-
+# predictions = model.predict(real_input)
+predictions = model.predict([[4,2,0,0,0,1,0,3]])
 # PREDICT THE INPUT WRONG VALE
-prediction_R = model.predict(wrong_input)
+# prediction_R = model.predict(wrong_input)
 
-# if (predictions == 0):
-#     predictions = [' Gtaa ']
-# else:
-#     predictions = [' Wasl ']
+if (predictions == 0):
+     predictions = [' Gtaa ']
+else:
+     predictions = [' Wasl ']
 print('\n')
 # Step 6: Check classifier accuracy on test data and see result
 print("Accuracy: ",accuracy_score(y_ts, predict_vector))
+print('\n')
 print('The Outcome of the real input is : \n' ,predictions)
 
-print('\n')
+# print('\n')
 
-print('The Outcome of the wrong input is : \n' ,prediction_R)
+# print('The Outcome of the wrong input is : \n' ,prediction_R)
 
-print('\n')
+# print('\n')
 # Step 7: plot the Confusion matrix for our classifier
-# matrix = plot_confusion_matrix(model, x_ts, y_ts,cmap=plt.cm.Reds,normalize='true')
-# plt.title('Confusion matrix for our classifier')
-# plt.show()
+matrix = plot_confusion_matrix(model, x_ts, y_ts,cmap=plt.cm.Reds,normalize='true')
+plt.title('Confusion matrix for our classifier')
+plt.show()
 
 print('\n')
