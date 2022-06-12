@@ -19,7 +19,7 @@ from warnings import simplefilter
 simplefilter(action='ignore', category=FutureWarning)
 
 # Step2: Load dataset
-Arabic_word = pd.read_csv(r'C:\Users\nizar.maarouf\Desktop\Final_Progect_Ruppin\CSV_Files\Data.csv')
+Arabic_word = pd.read_csv(r'C:\Users\nizar.maarouf\Desktop\Final_Progect_Ruppin\DATA\CSV_Files\Data.csv')
 
 # input wrong value 
 # wrong_input = pd.read_csv(r'C:\Users\nizar.maarouf\Desktop\Final_Progect_Ruppin\CSV_Files\wrong_input.csv')
