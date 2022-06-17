@@ -12,7 +12,7 @@
 # 86000503   قطع
 # ==============================
 # Gtaa Or Wasl Desktop App
-# With Tkinter
+# With Tkinter by: Nizar Maarouf
 # ==============================
 
 from array import *
@@ -53,11 +53,11 @@ vector_input.pack()  # Place The Input Into The Main Window
 
 # function in click
 def main():
-
+     # Get the input from the user and convert it to array
     givenVector = vector.get() 
     givenVector = [int(x) for x in str(givenVector)]
-
-    data = pd.read_csv (r'C:\Users\nizar.maarouf\Desktop\APP_Files\Data.csv').head(426)
+    # Read the file data and make variable to trainning 
+    data = pd.read_csv (r'C:\Users\nizar.maarouf\Desktop\Final_Progect_Ruppin\APP_Files\DATA\Data.csv').head(426)
     data.drop('Word', inplace = True, axis=1)
     y = data['Outcome']
     x = data.drop(["Outcome"], axis = 1)
@@ -73,11 +73,11 @@ def main():
         
     if(predictions  == 0):
         result = 'هذه الكلمة تبدأ بهمزة القطع' 
-        line_one = f"outcome - {result}" 
+        line_one = f"{result}" 
         messagebox.showinfo("Your Word is : \n",line_one)
     else:
         result = 'هذه الكلمة تبدأ بهمزة الوصل'   
-        line_two = f"outcome - {result}"
+        line_two = f"{result}"
         messagebox.showinfo("Your Word is :\n ", line_two)
 
     print('\n')
