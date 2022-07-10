@@ -1,0 +1,16 @@
+18:04:25 From  יורם סגל  to  Everyone:
+	https://heartbeat.comet.ml/deep-learning-has-a-size-problem-ea601304cd8
+18:21:32 From  יורם סגל  to  Everyone:
+	https://colab.research.google.com/drive/1OPdSzpmIdhZJ39EUEkeU9EfzkKc_C9XS#scrollTo=zsKKaa0ZCT8V
+18:43:45 From  יורם סגל  to  Everyone:
+	https://colab.research.google.com/drive/1OPdSzpmIdhZJ39EUEkeU9EfzkKc_C9XS#scrollTo=zsKKaa0ZCT8V
+18:44:08 From  יורם סגל  to  Everyone:
+	https://docs.google.com/spreadsheets/d/16oeOaT7FIRHSVe4GlNgtMNM8Px1nlnrt5XiirDPqdTQ/edit#gid=386328699
+18:45:05 From  יורם סגל  to  Everyone:
+	https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761
+18:45:31 From  יורם סגל  to  Everyone:
+	https://medium.com/towards-artificial-intelligence/machine-learning-algorithms-for-beginners-with-python-code-examples-ml-19c6afd60daa
+18:45:47 From  יורם סגל  to  Everyone:
+	https://towardsdatascience.com/hands-on-machine-learning-in-python-decision-tree-classification-eba67a37a39c
+18:46:15 From  יורם סגל  to  Everyone:
+	https://machine-learning-with-python.readthedocs.io/en/latest/
